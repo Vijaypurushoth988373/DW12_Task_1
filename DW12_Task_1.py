@@ -1,6 +1,6 @@
 import re
 def register():
-    email = input("Enter email address: ")
+    email = input("Create email address: ")
     passwd = input("Enter password: ")
     conf_pwd = input('Confirm password: ')
 
@@ -48,6 +48,11 @@ def login():
     f.close()
     if email == stored_email and passwd == stored_pwd:
          print('Logged in Successfully!')
+    elif email == stored_email and passwd != stored_pwd:
+        print("Password is not Valid")
+        print("***********************")
+        print("Please Login again !!!")
+        login()
     else:
          print('Login failed! \n')
          register()
