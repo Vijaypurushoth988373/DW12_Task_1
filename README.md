@@ -23,6 +23,6 @@ Once all the informations above is satisfied, we can able to create an registrat
 
 In login,
   1. If email and password are correct, the code will login successfully
-  2. If email and password are incorrect, the code will be functioning the registration process again
+  2. If email and password are incorrect, the code will be starting the registration process again
 
   
