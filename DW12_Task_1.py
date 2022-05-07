@@ -38,7 +38,7 @@ def register():
         print('You have registered successfully!')
     else:
         print('Password is not same as above! \n')
-
+        register()
         
 def login():
     email = input('Enter email: ')
